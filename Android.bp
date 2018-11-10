@@ -21,10 +21,6 @@ java_sdk_library {
     api_srcs: [
         ":apache-http-stubs-sources",
     ],
-    libs: [
-        "conscrypt",
-        "bouncycastle",
-    ],
     api_packages: [
           "android.net.compatibility",
           "android.net.http",
@@ -66,7 +62,6 @@ java_sdk_library {
           "org.apache.http.protocol",
           "org.apache.http.util",
     ],
-    hidden_api_packages: ["com.android.okhttp"],
     dex_preopt: {
         profile: "art-profile",
         app_image: false,
